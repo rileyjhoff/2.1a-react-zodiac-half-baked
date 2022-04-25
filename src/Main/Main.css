@@ -1,16 +1,39 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 main {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 40px;
   background-size: cover;
   height: calc(100vh - 80px);
-  align-content: flex-start;
+  align-items: center;
   justify-content: center;
-  overflow: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow: hidden;
+  /* overflow: scroll; */
+  /* scrollbar-width: none;
+  -ms-overflow-style: none; */
 }
 
-main::-webkit-scrollbar {
+/* main::-webkit-scrollbar {
   display: none;
+} */
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  width: calc(100% - 10rem);
+}
+
+.slider-button {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 5rem;
+  height: 25%;
+  background-color: red;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
