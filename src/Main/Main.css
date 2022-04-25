@@ -21,16 +21,24 @@ main {
 
 .container {
   display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
   flex-grow: 1;
   width: calc(100% - 10rem);
 }
 
 .slider-button {
+  border: none;
+  border-radius: 5px;
   flex-grow: 0;
   flex-shrink: 0;
   width: 5rem;
-  height: 25%;
-  background-color: red;
+  margin: .25rem 0;
+  background-color: rgba(0, 0, 0, .5);
   z-index: 5;
   display: flex;
   align-items: center;

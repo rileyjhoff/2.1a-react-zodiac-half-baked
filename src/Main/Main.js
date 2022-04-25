@@ -10,17 +10,19 @@ export default function Main({ zodiacs }) {
       {/* get the zodiac array from props */}
       {/* for each item in the `zodiacs` array props, render a ZodiacCard component, passing in the name and the dates as props to the ZodiacCard component */}
       {/* remember that when you map over an array and render out a list, each item in the list needs a unique 'key' prop */}
-      <div className='slider-button'></div>
       <div className='container'>
-        {zodiacs.map(zodiac => 
-          <ZodiacCard 
-            key={zodiac.name}
-            name={zodiac.name}
-            dates={zodiac.dates}
-          />
-        )}
+        <div className='slider-button'></div>
+        <div className='slider'>
+          {zodiacs.map(zodiac => 
+            <ZodiacCard 
+              key={zodiac.name}
+              name={zodiac.name}
+              dates={zodiac.dates}
+            />
+          )}
+        </div>
+        <div className='slider-button'></div>
       </div>
-      <div className='slider-button'></div>
     </main>
   );
 }
