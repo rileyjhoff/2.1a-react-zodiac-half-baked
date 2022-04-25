@@ -5,6 +5,7 @@ main {
   background-size: cover;
   height: calc(100vh - 80px);
   align-content: flex-start;
+  justify-content: center;
   overflow: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
