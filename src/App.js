@@ -12,6 +12,7 @@ function App() {
       {/* the Header component needs a string passed in as the `name` prop */}
       <Header name='Riley' />
       {/* the Footer component needs a year passed in as the `year` prop */}
+      <Footer year='2022' />
       {/* pass the zodiac array imported above to the Main component as a `zodiacs` prop */}
     </div>
   );
