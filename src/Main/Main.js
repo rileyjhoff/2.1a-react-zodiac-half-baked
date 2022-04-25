@@ -4,7 +4,7 @@ import './Main.css';
 {/* import the ZodiacCard component */}
 import ZodiacCard from '../ZodiacCard/ZodiacCard.js';
 
-export default function Main() {
+export default function Main({ zodiacs }) {
   return (
     <main style={{ backgroundImage: `url(${backgroundImg})` }}>
       {/* get the zodiac array from props */}
