@@ -1,6 +1,12 @@
 import React from 'react';
 import './Footer.css';
 
-export default function Footer(props) {
-  return <footer>Copyright Alchemy Codelab {props.year}</footer>;
+export default function Footer({ year }) {
+  return (
+    <footer>
+      <div>
+        Copyright Alchemy Codelab {year}
+      </div>
+    </footer>
+  );
 }
