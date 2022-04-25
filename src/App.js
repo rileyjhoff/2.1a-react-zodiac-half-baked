@@ -1,5 +1,6 @@
 import './App.css';
 {/* import the zodiac array */}
+import { zodiac } from './data.js';
 
 function App() {
   return (
